@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+margin: 0;
+box-sizing: border-box;
+transition: all 0.2s ease-out;
+}
+/*
+- Very pale blue: hsl(225, 100%, 98%) - Desaturated blue: hsl(224, 23%, 55%) - Dark blue: hsl(223, 47%, 23%)
+font-family: 'Red Hat Display', sans-serif;
+*/
+body{
+    background-color: hsl(225, 100%, 98%);
+    font-family: 'Red Hat Display',
+    sans-serif;
+    background-image: url('./images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.App{
+   height: 100%;
+    width:100%;
+    display: flex;
+    padding-top:60px;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    background-color: white;
+    width: 92%;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    max-width:450px;
+    align-items:center;
+margin: 10px 0;
+}
+img{
+    width: 100%;
+border-radius:20px 20px 0 0;
+}
+.content{
+    text-align: center;
+    width: 75%;
+}
+h1{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 1.6em;
+    margin: 15px 0;
+    margin-top: 40px;
+    margin-bottom:15px;
+}
+.header-p{
+    font-size: 1rem;
+    line-height: 27px;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 15px;
+}
+.price-tag{
+    padding: 15px;
+    display: flex;
+width: 80%;
+justify-content: space-between;
+align-items: center;
+background-color: hsl(225, 100%, 98%);
+border-radius: 20px;
+}
+.price{
+    display: flex;
+color: hsl(223, 47%, 23%);
+}
+.price-p{
+font-weight: 700;
+padding-left: 18px;
+}
+.plan{
+    color: hsl(224, 23%, 55%);
+font-weight: 500;
+}
+a{
+    color: hsl(223, 47%, 23%);
+}
+a:hover{
+    color: hsl(224, 23%, 55%);
+}
+.buttons{
+    display: flex;
+    flex-direction: column; 
+    width: 80%;
+    align-items: center;
+}
+.btn-primary{
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 15px 10px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.9rem;
+    background-color: #382ae1;
+   margin-top:30px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.459);
+cursor: pointer;
+}
+.btn-primary:hover {
+background-color: #766CF1;
+}
+.btn-secondary{
+    background: none;
+    border: none;
+    margin: 25px 0 30px 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: hsl(224, 23%, 55%);
+    font-weight:700;
+}
+.btn-secondary:hover {
+color: hsl(223, 47%, 23%);
+
+}
+.attribution{
+ margin-bottom: 10px;
+    text-align: center;
+}
+.music{
+    width: 30%;
+    height: 30%;
+    min-width: 40px;
+    min-height: 40px;
+}
